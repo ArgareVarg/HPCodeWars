@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class prob13 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String num = in.next();
+		int size = in.nextInt();
+		
+		int tempIndex = 0;
+		String tempString = "";
+		int tempNum = 0;
+		String tempBin = "";
+		
+		for(int i = 0; i < size; i++){
+			for(int j = tempIndex; j < num.length(); j++) {
+				tempString = num.substring(tempIndex, j);
+			}
+		}
+		System.out.println("forget".substring(1, 1));
+
+	}
+
+}

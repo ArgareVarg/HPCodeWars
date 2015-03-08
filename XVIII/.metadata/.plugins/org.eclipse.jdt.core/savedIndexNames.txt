@@ -1,3 +1,11 @@
 INDEX VERSION 1.127+/home/argarevarg/Projects/HPCodeWars/XVIII/.metadata/.plugins/org.eclipse.jdt.core
+1680443291.index
+2370445998.index
 2317870775.index
+321828621.index
 4246787617.index
+339964692.index
+4093337107.index
+1665418114.index
+2100475610.index
+4199354936.index

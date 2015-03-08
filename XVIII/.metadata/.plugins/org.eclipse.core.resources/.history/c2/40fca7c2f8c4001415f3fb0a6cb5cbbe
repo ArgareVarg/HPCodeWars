@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class prob08 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int inputs = in.nextInt();
+		int empty = 0;
+		int noroom = 0;
+		int duplicates = 0;
+		ArrayList<String[]> input = new ArrayList<String[]>(inputs);
+		ArrayList<String> duplicatesList = new ArrayList<Integer>();
+		for (int i = 0; i < inputs; i++) {
+			String line = in.nextLine();
+			input.set(i, line.split(" "));
+			if (line.contentEquals("NA")) empty++;
+			if (line.contains(" 0")) noroom++;
+			for (int a = 0; a < i; a++) {
+				if (input.get(a)[1].equals(input.get(i)[1])) {
+					if (!duplicatesList.contains(input.get(i)[1])) {
+						duplicates++;
+						duplicatesList.add(input.get(i)[1]);
+					}
+				}
+			}
+		}
+	}
+
+}
