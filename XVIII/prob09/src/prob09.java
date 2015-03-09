@@ -11,7 +11,7 @@ public class prob09 {
         Scanner in = new Scanner(System.in);
         while (true) {
             String line = in.nextLine();
-            String[] split = line.split("");
+            String[] split = line.split(" ");
             Integer team = Integer.parseInt(split[0]);
             Integer score = Integer.parseInt(split[1]);
             if (map.get(team) == null) {
